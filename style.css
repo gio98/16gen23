@@ -55,9 +55,9 @@ top: 0;
   /* position: absolute; */
   top: 72px;
   font-size: 202px;
-  right: -27px;
+  right: 561px;
+  text-align: right;
 }
-
 .write2 {
   z-index: 100;
   /* position: absolute; */
@@ -155,3 +155,25 @@ p span:hover:after {
     width: 100%;
   }
 }
+
+
+
+@media  screen and (orientation:portrait ) {
+  .write {
+    z-index: 100;
+    /* position: absolute; */
+    top: 72px;
+    font-size: 202px;
+    right: 196px;
+    text-align: right;
+}
+#myBtn {
+	position: relative;
+	left: 596px;
+	z-index: 100;
+	height: 52px;
+	width: 97px;
+	top: -150px;
+}
+}
+
