@@ -1,0 +1,157 @@
+body {
+  background: #111;
+  background-image: url('romantic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+#silvestro {
+  position: absolute;
+    left: 396px;
+  top:97px;  
+  z-index: 100;  
+}
+
+#cuore {
+  position: absolute;
+  left: 293px;
+  z-index: 50;  
+}
+
+h1 {
+  background: linear-gradient(to bottom, #cfc09f 22%,#634f2c 24%, #cfc09f 26%, #cfc09f 27%,#ffecb3 40%,#3a2c0f 78%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+font-family: 'Playfair Display', serif;
+  position: relative;
+text-transform: uppercase;	
+font-size: 5vw;
+margin: 0;
+font-weight: 400;
+text-align: center;
+}
+
+h1:after {
+  background: none;
+  content: attr(data-heading);
+  left: 0;
+top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow: 
+  -1px 0 1px #c6bb9f, 
+  0 1px 1px #c6bb9f, 
+  5px 5px 10px rgba(0, 0, 0, 0.4),
+  -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.write {
+  z-index: 100;
+  /* position: absolute; */
+  top: 72px;
+  font-size: 202px;
+  right: -27px;
+}
+
+.write2 {
+  z-index: 100;
+  /* position: absolute; */
+  top: 173px;
+  font-size: 94px;
+  right: -27px;
+}
+
+#myBtn {
+	position: relative;
+	left: 596px;
+	z-index: 100;
+	height: 52px;
+	width: 97px;
+	top: -67px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: -88px;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  font-size: 15px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.5em;
+}
+p:first-letter {
+  font-size: 5em;
+  float: left;
+  margin: 30px 10px 5px 0;
+  font-style: italic;
+  color: Red;
+}
+p span {
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+p span:after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: Red;
+  top: 1em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+p span:hover:after {
+  animation: underline .3s 1 forwards;
+}
+@keyframes underline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
